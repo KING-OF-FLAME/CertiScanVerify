@@ -51,11 +51,17 @@ Start generating and verifying certificates!
 ## Features 📍
 
 -   **Template-Based Generation**: Generates certificates using customizable PDF templates.
+
 -   **QR Code Embedding**: Embeds unique QR codes into each generated certificate for verification.
+
 -   **Client-Side Verification**: Verifies certificates by scanning QR codes directly within the browser.
+
 -   **Multiple Input Methods**: Supports single name input, multiple name input, and CSV file upload for recipient names.
+
 -   **Live Preview**: Provides a live preview of the certificate before downloading.
+
 -   **Download Options**: Allows downloading generated certificates in PDF or PNG format.
+
 -   **Local Storage Persistence**:  Saves certificate data to the browser's `localStorage` for temporary persistence.
 
 -------------------------------------------------
@@ -63,13 +69,17 @@ Start generating and verifying certificates!
 ## Usage 📍
 
 1.  Clone the repository: `git clone https://github.com/KING-OF-FLAME/CertiScanVerify.git`
+
 2.  Navigate to the project directory.
+
 3.  Open `index.html` in a web browser to use the application locally.
 
 For online deployment:
 
 1.  Upload all project files to your web server.
+
 2.  Ensure that the file structure is maintained (especially the `templates/` directory).
+
 3.  Access the application via your domain (e.g., `https://yourdomain.com/certiscanverify/index.html`).
 
 -------------------------------------------------
@@ -89,4 +99,5 @@ Contributions are what make the open-source community such an amazing place to l
 ## Acknowledgments 📍
 
 -   Special thanks to the developers of the libraries used in this project: `pdf-lib`, `pdf.js`, `QRious`, and `jsPDF`.
+
 -   Special thanks to all contributors and supporters of this project!
