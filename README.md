@@ -15,7 +15,12 @@ CertiScanVerify is a client-side certificate management system that allows for g
 ## 🚀 Live Preview
 
 <p align="center">
-  <img src="assets/demo.gif" alt="CertiScanVerify Live Preview" width="700">
+  <a href="https://www.youtube.com/watch?v=S5bHNNH_FIk" title="Click to watch the video on YouTube">
+    <img src="assets/demo.gif" alt="CertiScanVerify Live Preview" width="450">
+  </a>
+</p>
+<p align="center">
+  <i>(If the preview appears blurry, click it to watch the high-quality video on YouTube)</i>
 </p>
 
 -------------------------------------------------
