@@ -3,7 +3,7 @@ CertiScanVerify is a client-side certificate management system that allows for g
 
 
 <p align="center">
-  <img src="https://via.placeholder.com/200x200?text=CertiScanVerify" alt="CertiScanVerify Logo"> 
+  <img src="https://i.ibb.co/0pZdSqKZ/Gemini-Generated-Image-z56q1jz56q1jz56q.png" alt="CertiScanVerify Logo"> 
 </p>
 
 [![Repo Size](https://img.shields.io/github/repo-size/KING-OF-FLAME/CertiScanVerify?style=flat-square&color=orange)](https://github.com/KING-OF-FLAME/CertiScanVerify)
