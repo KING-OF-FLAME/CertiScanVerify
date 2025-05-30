@@ -1,0 +1,240 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #007bff; /* Primary color */
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+h2 {
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: calc(100% - 22px); /* Account for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    cursor: pointer;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+.input-method-tabs {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.tab-button {
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.input-area {
+    padding: 15px;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+
+.csv-guide {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #e9f5ff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.csv-guide pre {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+
+.cta-button, button {
+    background-color: #28a745; /* Success color for main CTA */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+button {
+    background-color: #007bff; /* Standard button blue */
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+#downloadButtons button {
+    margin-right: 10px;
+}
+
+.canvas-container {
+    width: 100%;
+    max-width: 700px; /* Adjust as needed */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Light background for canvas visibility */
+    overflow: hidden; /* Ensures canvas border is neat */
+}
+
+#previewCanvas {
+    display: block; /* Remove extra space below canvas */
+    width: 100%;   /* Make canvas responsive */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.processing-message p {
+    font-style: italic;
+    color: #007bff;
+    text-align: center;
+}
+
+.generated-list-section {
+    margin-top: 20px;
+}
+
+.certificate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.certificate-item span {
+    flex-grow: 1;
+}
+
+.certificate-item .actions button {
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    .input-method-tabs {
+        flex-direction: column;
+    }
+    .tab-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .certificate-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .certificate-item .actions {
+        margin-top: 10px;
+    }
+    .certificate-item .actions button {
+        margin-left: 0;
+        margin-right: 8px;
+        margin-bottom: 5px;
+    }
+}
