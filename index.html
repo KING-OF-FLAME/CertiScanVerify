@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Certificate Generator 📜</h1>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>1. Input Names</h2>
+                <div class="input-method-tabs">
+                    <button class="tab-button active" data-input-type="single">Single Name</button>
+                    <button class="tab-button" data-input-type="multiple">Multiple Names</button>
+                    <button class="tab-button" data-input-type="csv">Upload CSV</button>
+                </div>
+
+                <div id="singleNameInput" class="input-area">
+                    <label for="singleName">Name:</label>
+                    <input type="text" id="singleName" placeholder="e.g., Jane Doe">
+                </div>
+
+                <div id="multipleNamesInput" class="input-area" style="display: none;">
+                    <label for="multipleNames">Names (one per line):</label>
+                    <textarea id="multipleNames" rows="5" placeholder="Jane Doe&#10;John Smith"></textarea>
+                </div>
+
+                <div id="csvInput" class="input-area" style="display: none;">
+                    <label for="csvFile">CSV File:</label>
+                    <input type="file" id="csvFile" accept=".csv">
+                    <small class="csv-guide">
+                        <strong>CSV File Guide:</strong>
+                        <ul>
+                            <li>The CSV file should contain one name per line.</li>
+                            <li>An optional header row with "Name" (case-insensitive) is allowed and will be ignored.</li>
+                            <li>Example `names.csv`:
+                                <pre>Name\nAlice Smith\nBob Johnson</pre>
+                            </li>
+                        </ul>
+                    </small>
+                </div>
+            </section>
+
+            <section class="options-section">
+                <h2>2. Select Template</h2>
+                <select id="templateSelect">
+                    <option value="completion" data-path="templates/completion.pdf">Completion Certificate</option>
+                    <option value="appreciation" data-path="templates/appreciation.pdf">Appreciation Certificate</option>
+                </select>
+            </section>
+
+            <section class="actions-section">
+                <button id="generateButton" class="cta-button">✨ Generate Certificates</button>
+            </section>
+
+            <section id="processingMessage" class="processing-message" style="display: none;">
+                <p>⏳ Processing... Please wait.</p>
+            </section>
+            
+            <section class="preview-section">
+                <h2>Live Preview</h2>
+                <div class="canvas-container">
+                    <canvas id="previewCanvas"></canvas>
+                </div>
+                <div id="downloadButtons" style="display: none; margin-top:15px;">
+                     <p>For: <strong id="currentPreviewName"></strong> (ID: <small id="currentPreviewId"></small>)</p>
+                    <button id="downloadPdfButton">Download as PDF</button>
+                    <button id="downloadImageButton">Download as Image (PNG)</button>
+                </div>
+            </section>
+
+            <section id="generatedListSection" class="generated-list-section" style="display:none;">
+                <h2>Generated Certificates</h2>
+                <div id="certificateList">
+                    </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Certificate Generator & Verifier | Client-Side Edition</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
