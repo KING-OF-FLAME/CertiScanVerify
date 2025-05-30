@@ -36,12 +36,17 @@ CertiScanVerify is a client-side certificate management system that allows for g
 To run this project on your local machine:
 
 1.  **Clone the repository**:
+
     -   Open your command line or terminal.
+    
     -   Navigate to your desired directory (e.g., `cd ~/Documents/projects`).
+    
     -   Run the command: `git clone https://github.com/KING-OF-FLAME/CertiScanVerify.git`.
 
 2.  **Open `index.html`**:
+
     -   Navigate into the cloned project directory (e.g., `cd CertiScanVerify`).
+    
     -   Open the `index.html` file in your web browser (e.g., by double-clicking the file, or right-clicking and selecting "Open with").
 
 Start generating and verifying certificates!
